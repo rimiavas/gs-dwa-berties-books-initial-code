@@ -21,8 +21,3 @@ SELECT * FROM books;
 CREATE USER 'appuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'app2027';
 
 GRANT ALL PRIVILEGES ON myBookshop.* TO 'appuser'@'localhost';
-
-# Create the app user and give it access to the database
-CREATE USER 'appuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'app2027';
-GRANT ALL PRIVILEGES ON myBookshop.* TO 'appuser'@'localhost';
-
