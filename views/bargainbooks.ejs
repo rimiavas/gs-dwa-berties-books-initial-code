@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title><%=shopName%> Bargains Shops</title>
+        <link rel="stylesheet"  type="text/css" href="/main.css" />
+    </head>
+    <body>
+        <h1><%=shopName%> Bargain</h1>
+        <h2>Here are the books that we sell under £20:</h2>
+        <!-- Loop through bargain books passed in -->
+            <ul>
+                <% for (let i = 0; i < bargainBooks.length; i++) { %>
+                    <!-- Display each book's name and price -->
+                    <li><%= bargainBooks[i].name%>, <%= bargainBooks[i].price%></li>
+                <% } %>
+            </ul>
+    </body>
+</html>

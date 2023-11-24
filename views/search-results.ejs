@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <title><%=shopName%> search results</title>
+        <link rel="stylesheet"  type="text/css" href="/main.css" />
+    </head>
+    <body>
+        <h1><%=shopName%> search</h1>
+        <h2>Here are the books that match the search </h2>
+            <ul>
+                <% for(let i = 0; i < books.length; i++) { %>
+                    <li><%= books[i].name %>, <%=books[i].price %> </li>
+                <% } %>
+            </ul>
+    </body>
+</html>
